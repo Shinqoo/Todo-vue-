@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Intro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <!-- <div id= "vue-app">
+        <h1>{{greeting (" afternoon")}}</h1>
+        <h1>{{name}}</h1>
+        <h1>my job is a {{job}}</h1>
+        <p v-html = "websiteTag"></p>
+        <input type="text" v-bind:value="job">
+
+    </div> -->
+
+    <!-- <div id="vue-app">
+        <button v-on:click = "addgrade">add</button>
+        <button v-on:click = "subgrade">subtract</button>
+        <p>{{grade}}</p>
+        <p>Name: </p><input type="text" v-on:keyup.enter="logmsg" v-model="name">
+        <p>{{name}}</p>
+        <button v-on:click="logName">click me</button>
+    </div> -->
+
+    <!-- <div id="canvas" v-mousemove="update">
+        {{x}},{{y}}
+    </div> -->
+
+    <div id="todolist">
+        <form v-on:submit.prevent="addtodo">
+            <label for="add"></label>  
+            <input type="text" name="" id="add" v-model="item">
+            <button>Submit</button>
+        </form>
+        <ul>
+            <li v-for = "item in list" :key="item.todo">{{item.todo}}</li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
